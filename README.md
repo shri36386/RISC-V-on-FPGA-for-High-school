@@ -1,1 +1,1 @@
-# RISC-V-on-FPGA-for-High-school
+# RISC-V ON FPGA FOR HIGH SCHOOL
