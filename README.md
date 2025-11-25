@@ -98,13 +98,7 @@ When working with binary values, each bit can take one of two possible states: 0
 
 For example, with 2 bits, the possible binary patterns are:
 
-00
-
-01
-
-10
-
-11
+00, 01, 10, 11
 
 Total number of patterns = 2 raised to 2 = 4
 
