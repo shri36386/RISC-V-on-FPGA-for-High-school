@@ -17,7 +17,18 @@ ISA
   4. How to control program flow.
 
 WHY DO WE REQUIRE RISC-V ISA
+
 * The software application we run are programmed in the C or C++ languages, languages with are high-level and are easily understandable by humans.However, they cannot be understood by computers.
 * To implement these software programmes on a hardware, we must convert it to assembly language. Assembly language is a low-level human readable version of machine code. RISC-V assembly is the assembly that follows the RISC-V ISA rules.
+
+HDL AND RTL
+
+* Another thing between the RISC-V Architecture and the layout is HDL.
+* A Processor is hardware. All instrutions need to be excecuted by circuits in Processor
+* HDL (Hardware Description Language) is a programming language but for the hardware. We use HDL to explain how a circuit behaves.
+* RTL (Register transfer level) is a way of describing circuits in HDL. It focuses on how the data moves between registers and what operations happen on the data.
+
+FLOW FROM SOFTWARE TO HARDWARE
+
   </details>
 
