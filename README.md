@@ -46,20 +46,20 @@ WHY DO WE REQUIRE RISC-V ISA
 
 HDL AND RTL
 
-* Another thing between the RISC-V Architecture and the layout is HDL.
-* A Processor is hardware. All instrutions need to be excecuted by circuits in Processor
-* HDL (Hardware Description Language) is a programming language but for the hardware. We use HDL to explain how a circuit behaves.
-* RTL (Register transfer level) is a way of describing circuits in HDL. It focuses on how the data moves between registers and what operations happen on the data.
+* Between the RISC-V architecture and the physical hardware layout lies the Hardware Description Language (HDL) stage. This stage serves as the bridge between the abstract ISA and the actual circuit implementation.
+* A processor is a hardware component, and all instructions must ultimately be executed by physical circuits within the processor. Translating architectural concepts into functioning circuitry requires a precise method for describing hardware behavior.
+* HDL (Hardware Description Language) is a specialized programming language used to model and describe electronic circuits. It allows designers to specify how hardware components behave, interact, and respond to signals, enabling simulation, verification, and synthesis of digital systems.
+* RTL (Register Transfer Level) is a design abstraction used within HDL to describe hardware at the level of data flow between registers and the logical operations performed on that data. It provides a structured way to represent circuit behavior before converting it into detailed gate-level or physical layouts.
 
 FLOW FROM SOFTWARE TO HARDWARE
 <img width="766" height="313" alt="image" src="https://github.com/user-attachments/assets/e0103b1f-fedf-4b8b-9c34-767d37843ceb" />
 
 STEP-BY-STEP FLOW -
 
-* Software is programmed in the C or C ++ Programming languages.
-* The compiler converts the C/C++ language into RISC-V Assembly language.
-* The Assembler assembles this into machine code (in hexadecimal formal).
-* The machine code runs on the Hardware.
+* Software applications are typically written in high-level programming languages such as C or C++. These languages are designed to be readable and manageable for developers but cannot be executed directly by hardware.
+* A compiler translates the C/C++ source code into RISC-V assembly language. This assembly code expresses the program using the instruction set defined by the RISC-V ISA, making it compatible with RISC-V processors.
+* An assembler then converts the assembly code into machine code, typically represented in hexadecimal format. This machine code consists of binary instructions that the processor can interpret and execute.
+* The machine code is finally executed on the hardware, where the processor carries out each instruction through its underlying circuits.
 
   </details>
 
