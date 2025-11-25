@@ -4,8 +4,8 @@
 RISCV
 
   * RISC stands for Reduced Instruction Set Computer.
-  * RISC V is a open standard Instruction Set Architecture (ISA) used for designing computer processors.
-  * A CPU requires instructions to function. RISC V is a set of basic nstructions a processor can understand.
+  * RISC-V is a open standard Instruction Set Architecture (ISA) used for designing computer processors.
+  * A CPU requires instructions to function. RISC-V is a set of basic nstructions a processor can understand.
 
 ISA
 
@@ -15,5 +15,9 @@ ISA
   2. How to access memory
   3. How to manage registers
   4. How to control program flow.
+
+WHY DO WE REQUIRE RISC-V ISA
+* The software application we run are programmed in the C or C++ languages, languages with are high-level and are easily understandable by humans.However, they cannot be understood by computers.
+* To implement these software programmes on a hardware, we must convert it to assembly language. Assembly language is a low-level human readable version of machine code. RISC-V assembly is the assembly that follows the RISC-V ISA rules.
   </details>
 
