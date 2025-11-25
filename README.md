@@ -26,23 +26,23 @@ Other concepts
   <summary><h2>INTRODUCTION TO RISC-V</h2> </summary>
 RISCV
 
-  * RISC stands for Reduced Instruction Set Computer.
-  * RISC-V is a open standard Instruction Set Architecture (ISA) used for designing computer processors.
-  * A CPU requires instructions to function. RISC-V is a set of basic nstructions a processor can understand.
+  * RISC (Reduced Instruction Set Computer) refers to a processor design philosophy that uses a streamlined set of simple, efficient instructions. This approach enables faster execution, lower power consumption, and simplified hardware implementation.
+  * RISC-V is an open, extensible, and freely available Instruction Set Architecture (ISA) that provides a standardized foundation for designing a wide range of computer processors. Its openness encourages innovation, collaboration, and customization across both academic and industrial applications.
+  * A CPU relies on instructions to perform operations, and RISC-V defines the fundamental set of instructions that a processor can interpret and execute. By specifying these core operations, RISC-V ensures consistency, interoperability, and flexibility in processor design.
 
 ISA
 
-* It is the formal interface between a computer software and Hardware. To run a software application on any hardware, there must exist a way to communicate between the two. The ISA makes this communication possible.
-* It defines the set of machine instructions a processor can excecute along with rules for -
-  1. How to operate on data
-  2. How to access memory
-  3. How to manage registers
-  4. How to control program flow.
+* An Instruction Set Architecture (ISA) serves as the formal interface between computer software and hardware. To execute any software application on a given hardware platform, there must be a well-defined method for communication between the two. The ISA provides this bridge by specifying how software instructions translate into hardware-level operations.
+* The ISA defines the complete set of machine instructions a processor can execute, along with the rules governing how these instructions interact with system resources. These rules cover several key aspects of processor behavior, including:
+  1. Data operations – specifying how arithmetic, logical, and other computations are performed.
+  2. Memory access mechanisms – defining how data is read from and written to memory.
+  3. Register management – outlining how the processor utilizes and manipulates its internal registers.
+  4. Program flow control – detailing how instructions are sequenced, including branching, jumping, and handling control structures.
 
 WHY DO WE REQUIRE RISC-V ISA
 
-* The software application we run are programmed in the C or C++ languages, languages with are high-level and are easily understandable by humans.However, they cannot be understood by computers.
-* To implement these software programmes on a hardware, we must convert it to assembly language. Assembly language is a low-level human readable version of machine code. RISC-V assembly is the assembly that follows the RISC-V ISA rules.
+* Software applications are typically written in high-level programming languages such as C or C++. These languages are designed to be readable and understandable by humans, but they cannot be directly interpreted by computer hardware, which only understands low-level machine instructions.
+* To execute these programs on hardware, the high-level code must be translated into assembly language. Assembly language is a low-level, human-readable representation of machine code that corresponds closely to the instructions a processor can execute. RISC-V assembly specifically refers to the assembly language that adheres to the rules and instruction formats defined by the RISC-V ISA.
 
 HDL AND RTL
 
