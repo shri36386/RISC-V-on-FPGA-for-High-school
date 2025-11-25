@@ -72,12 +72,43 @@ STEP-BY-STEP FLOW -
 <details>
   <summary><h2>INTEGER REPRESENTATION</h2> </summary>
 
-Human's understand the decimal number system. However computers work on Binary number system.
+Humans naturally use the decimal number system, which is based on digits 0 through 9 and is intuitive for everyday counting and calculation. Computers, however, operate using the binary number system, which uses only two digits—0 and 1—because digital circuits rely on two voltage states to represent information.
 
-Let have a number in the decimal number system -
+Consider the following number in the decimal system:
 
-(17,446,744,073,708,551,615)
+17,446,744,073,708,551,615
 
-In binary number system it will be -
+When represented in the binary number system, this value becomes:
+
+1111001000011111010010010100110001011000100011001011110110111111
+
+This binary sequence is 64 bits long, meaning it uses 64 binary digits to represent the same value that humans write using decimal notation.
+
+<img width="972" height="243" alt="image" src="https://github.com/user-attachments/assets/9cb849de-f6da-4e68-9fec-b04f13b8095e" />
+
+8 BITS = 1 BYTE
+
+4 BYTES = 1 WORD
+
+2-WORD / 8 BYTES - DOUBLEWORD
+
+TOTAL NUMBER OF PATTERNS
+
+When working with binary values, each bit can take one of two possible states: 0 or 1.
+
+For example, with 2 bits, the possible binary patterns are:
+
+00
+
+01
+
+10
+
+11
+
+Total number of patterns = 2 raised to 2 = 4
+
+Thus, for a 64 bit, the possible binary patterns are: 2 raised to the power 64
+
 
   </details>  
