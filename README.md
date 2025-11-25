@@ -1,5 +1,28 @@
 # RISC-V ON FPGA FOR HIGH SCHOOL
 <details>
+  <summary><h2>CONTENTS</h2> </summary>
+
+CONTENTS OF THE COURSE
+
+Integer addition, mul/div instructions 
+
+* Pseudo Instructions
+* Base Integer instructions RV64I
+* Multiply extension RV64M
+
+Floating point addition, mul/div instructions
+
+* Single and double precision
+* Floating point extension RV64F or RV64D
+
+Other concepts 
+
+* Application binary interface (ABI)
+* Memory allocation and stack pointer.
+* Integer representation.
+  </details>
+
+<details>
   <summary><h2>INTRODUCTION TO RISC-V</h2> </summary>
 RISCV
 
