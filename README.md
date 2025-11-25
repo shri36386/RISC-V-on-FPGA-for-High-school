@@ -1,6 +1,6 @@
 # RISC-V ON FPGA FOR HIGH SCHOOL
 <details>
-  <summary><h2>CONTENTS</h2> </summary>
+  <summary><h2>CONTENTS OF THE COURSE</h2> </summary>
 
 CONTENTS OF THE COURSE
 
@@ -63,3 +63,21 @@ STEP-BY-STEP FLOW -
 
   </details>
 
+<details>
+  <summary><h2>LABWORK FOR RISC-V SOFTWARE TOOLCHAIN</h2> </summary>
+
+  
+  </details>
+
+<details>
+  <summary><h2>INTEGER REPRESENTATION</h2> </summary>
+
+Human's understand the decimal number system. However computers work on Binary number system.
+
+Let have a number in the decimal number system -
+
+(17,446,744,073,708,551,615)
+
+In binary number system it will be -
+
+  </details>  
