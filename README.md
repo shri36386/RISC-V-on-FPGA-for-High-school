@@ -29,6 +29,14 @@ HDL AND RTL
 * RTL (Register transfer level) is a way of describing circuits in HDL. It focuses on how the data moves between registers and what operations happen on the data.
 
 FLOW FROM SOFTWARE TO HARDWARE
+<img width="766" height="313" alt="image" src="https://github.com/user-attachments/assets/e0103b1f-fedf-4b8b-9c34-767d37843ceb" />
+
+STEP-BY-STEP FLOW -
+
+* Software is programmed in the C or C ++ Programming languages.
+* The compiler converts the C/C++ language into RISC-V Assembly language.
+* The Assembler assembles this into machine code (in hexadecimal formal).
+* The machine code runs on the Hardware.
 
   </details>
 
