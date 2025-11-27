@@ -117,3 +117,11 @@ The Range of Positive numbers that can be shown using a 64 Bit - 0 to 2^63
 Highest number all 0's - 
 Lowest number - (-9223372036854775808)
   </details>  
+
+<details>
+  <summary><h2>LABWORK FOR SIGNED AND UNSIGNED NUMBERS</h2> </summary>
+
+ </details>  
+
+<details>
+  <summary><h2>APPLICATION BINARY INTERFACE</h2> </summary>
