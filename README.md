@@ -104,5 +104,16 @@ Total number of patterns = 2 raised to 2 = 4
 
 Thus, for a 64 bit, the possible binary patterns are: 2 raised to the power 64
 
+SIGNED NUMBERS
+Signed numbers are numerical values that can represent both positive and negative quantities. In computer systems, they are typically encoded using specific binary formats—such as two’s complement—which allow hardware to distinguish and correctly interpret the sign of a number. This enables processors to perform arithmetic operations that involve negative values as well as positive ones.
+In Positive numbers, the MSB always has the value 0
+In Negative numbers, the MSB always has the value 1
 
+The Range of Positive numbers that can be shown using a 64 Bit - 0 to 2^63
+Lowest number all 0's - 0
+Highest number all 1's except for MSB - 9223372036854775807
+
+The Range of Positive numbers that can be shown using a 64 Bit - 0 to 2^63
+Highest number all 0's - 
+Lowest number - (-9223372036854775808)
   </details>  
