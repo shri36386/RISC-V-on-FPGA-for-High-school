@@ -125,3 +125,11 @@ Lowest number - (-9223372036854775808)
 
 <details>
   <summary><h2>APPLICATION BINARY INTERFACE</h2> </summary>
+
+An Application Binary Interface (ABI) defines how software components interact at the machine-code level. It specifies conventions such as how functions are called, how data types are represented in memory, which registers are used for arguments and return values, and how the stack is organized. By standardizing these low-level details, an ABI ensures that compiled programs, libraries, and operating systems can work together seamlessly across compatible hardware.
+
+
+
+
+
+</details>  
