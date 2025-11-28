@@ -128,8 +128,48 @@ Lowest number - (-9223372036854775808)
 
 An Application Binary Interface (ABI) defines how software components interact at the machine-code level. It specifies conventions such as how functions are called, how data types are represented in memory, which registers are used for arguments and return values, and how the stack is organized. By standardizing these low-level details, an ABI ensures that compiled programs, libraries, and operating systems can work together seamlessly across compatible hardware.
 
+APPLICATION BINARY INTERFACE -> VIA REGISTERS -> ACCESSES SYSTEM
 
+Registers provided via RISC-V specifications
 
+* XLEN (width) - 32 bit for RV32
+* XLEN (width) - 64 bit for RV64
 
+Let's consider XLEN - 64bit RV64
 
+To load number in a register, there are two ways -
+
+1. Loading a Number Directly into a Register
+  
+In RV64, you can load an immediate (constant) value directly into a register using instructions like li (pseudo-instruction), which the assembler expands into real instructions (lui + addi) if needed for large constants.
+
+Steps:
+
+* Choose the register where you want to store the number, e.g., x5.
+* Use li to load the immediate value, for example:
+  li x5, 12345678
+* The assembler converts this into actual machine instructions depending on the size of the number. For numbers larger than 12 bits, it may use a combination of lui (load upper immediate) and addi (add immediate) to construct the full 64-bit value.
+* After execution, the register x5 directly contains the number 12345678.
+
+2. Loading a Number via Memory
+
+Sometimes, large numbers or constants are stored in memory, and you need to load them into a register. This is done in two steps: store into memory, then load from memory.
+
+Steps:
+
+* Allocate memory for the number (data section):
+
+.data
+my_number: .dword 123456789012345678  # 64-bit number
+
+* Choose a register to hold the address of the memory location, e.g., x6.
+* Load the address of the number into the register using la:
+
+la x6, my_number
+
+* Load the value from memory into another register using ld (load doubleword):
+
+ld x5, 0(x6)  # Load the 64-bit number at address in x6 into x5
+
+* After execution, the register x5 contains the value stored at my_number in memory.
 </details>  
