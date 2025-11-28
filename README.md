@@ -126,14 +126,19 @@ Lowest number - (-9223372036854775808)
 <details>
   <summary><h2>APPLICATION BINARY INTERFACE</h2> </summary>
 
-An Application Binary Interface (ABI) defines how software components interact at the machine-code level. It specifies conventions such as how functions are called, how data types are represented in memory, which registers are used for arguments and return values, and how the stack is organized. By standardizing these low-level details, an ABI ensures that compiled programs, libraries, and operating systems can work together seamlessly across compatible hardware.
+Application Binary Interface (ABI) in RISC-V
 
-APPLICATION BINARY INTERFACE -> VIA REGISTERS -> ACCESSES SYSTEM
+The Application Binary Interface (ABI) defines how software interacts with the hardware at the binary level. In RISC-V systems, this interaction primarily occurs via registers, which serve as the main communication channels between the program and the processor. The ABI specifies conventions for how registers are used for passing arguments, returning values, managing the stack, and handling system calls, ensuring consistent behavior across different software and hardware implementations.
 
-Registers provided via RISC-V specifications
+RISC-V provides a well-defined set of registers for this purpose, and the width of these registers is determined by the XLEN specification:
 
-* XLEN (width) - 32 bit for RV32
-* XLEN (width) - 64 bit for RV64
+XLEN = 32 bits for RV32 architectures
+
+XLEN = 64 bits for RV64 architectures
+
+For example, in an RV64 system with XLEN = 64 bits, each register can hold a 64-bit value, allowing the processor to efficiently handle large integers, addresses, and data types. The ABI dictates how these 64-bit registers are used when accessing memory, performing arithmetic operations, passing function arguments, or interfacing with the operating system.
+
+This abstraction ensures that software written for the RISC-V ABI can run on any compatible hardware without modification, as the conventions for register usage, data alignment, and system calls remain consistent.
 
 Let's consider XLEN - 64bit RV64
 
